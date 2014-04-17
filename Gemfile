@@ -4,7 +4,6 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.2'
 
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
@@ -17,6 +16,8 @@ gem 'coffee-rails', '~> 4.0.0'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
+
+gem 'pg'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -33,6 +34,9 @@ gem 'jbuilder', '~> 1.2'
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller'
+end
+
+group :production do
 end
 
 group :doc do
