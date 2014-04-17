@@ -1,0 +1,69 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+
+body {
+	background:#fff url(<%= asset_path 'tileable_wood_texture.png' %>);
+  text-shadow: 1px 1px 4px #575252;
+  margin: 0px;
+}
+
+.header {
+  width: 100%;
+  height: 75px;
+	background:#fff url(<%= asset_path 'arches.png' %>);
+  box-shadow: 0px 5px 10px #888888;
+}
+
+.header-overlay {
+  background: linear-gradient(rgba(248,114,23,0.5), rgba(125,5,65,0.5)); /* Standard syntax */
+  width: 100%;
+  height: 75px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.content {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.center {
+  text-align: center;
+}
+
+h1, h2, p {
+  font-family: "Comic Sans MS", cursive, sans-serif
+}
+
+.giant {
+  font-size: 65px;
+}
+
+.orange {
+  color: #F87217
+}
+
+.purple {
+  color: #7D0541
+}
+
+.tighten {
+  margin-right: -30px;
+}
+
+.gap {
+  margin: 15px;
+}

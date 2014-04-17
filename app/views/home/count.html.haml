@@ -1,0 +1,53 @@
+.row
+  %h2.center
+    %span.orange
+      Alex 
+    %span
+      and 
+    %span.purple
+      Mikayla's 
+    %span
+      wedding will be on 
+    %span.orange
+      = @wedding.strftime("%e")
+    %span.purple
+      = @wedding.strftime("%B,")
+    %span.orange
+      = @wedding.strftime("%Y")
+.row
+  %h2.center
+    Today is 
+    %span.purple
+      = @current.strftime("%e")
+    %span.orange
+      = @current.strftime("%B,")
+    %span.purple
+      = @current.strftime("%Y")
+.row
+  %h1
+    .center
+      %span.giant.orange.tighten
+        = @days_left[0]
+      - if @days_left[1]
+        %span.giant.purple.tighten
+          = @days_left[1]
+      - if @days_left[2]
+        %span.giant.orange.tighten
+          = @days_left[2]
+      %span.giant.gap
+      %span.giant.purple.tighten
+        D
+      %span.giant.orange.tighten
+        a
+      %span.giant.purple.tighten
+        y
+      %span.giant.orange
+        s
+      %span.giant.purple.tighten
+        L
+      %span.giant.orange.tighten
+        e
+      %span.giant.purple.tighten
+        f
+      %span.giant.orange
+        t
